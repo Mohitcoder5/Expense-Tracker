@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vexa Expense Tracker</title>
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0B1120" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  </head>
+  <!-- Pick your base body class:
+       - Solid dark:               bg-gray-950
+       - Vertical gradient:        bg-gradient-to-b from-gray-950 via-gray-950 to-gray-900
+       - Animated gradient:        bg-animated
+  -->
+  <body class="min-h-screen bg-gray-950 text-gray-100">
+    <!-- Background layers (behind the app) -->
+    <div class="pointer-events-none fixed inset-0 -z-10" aria-hidden="true">
+      <!-- 1) Vertical gradient base (comment if using bg-animated on body) -->
+      <div class="absolute inset-0 bg-gradient-to-b from-gray-950 via-gray-950 to-gray-900"></div>
+
+      <!-- 2) Soft radial glow -->
+      <div class="absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_-10%,rgba(99,102,241,0.15),transparent)]"></div>
+
+      <!-- 3) Optional subtle grid overlay (toggle opacity as you like) -->
+      <div class="absolute inset-0 bg-grid opacity-25"></div>
+
+      <!-- 4) OPTIONAL: Photo background with dark overlay (uncomment this block and remove 1–3 above)
+      <div class="absolute inset-0 bg-[url('/images/mesh.jpg')] bg-cover bg-center bg-fixed"></div>
+      <div class="absolute inset-0 bg-black/60"></div>
+      -->
+    </div>
+
+    <!-- React root -->
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
