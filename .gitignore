@@ -1,0 +1,15 @@
+# Backend dependencies
+backend/node_modules
+
+# Frontend dependencies
+frontend/node_modules
+
+# Environment variables (NEVER commit these)
+backend/.env
+
+# Vite build output
+frontend/dist
+
+# OS-specific files
+.DS_Store
+Thumbs.db
