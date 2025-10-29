@@ -83,7 +83,7 @@ export default function BackgroundProvider({ children, defaultVariant = 'gradien
     }
   });
 
-  useEffect(()_ => {
+  useEffect(() => {
     try {
       localStorage.setItem('bg-variant', variant);
     } catch {}
