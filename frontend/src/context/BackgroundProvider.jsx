@@ -89,7 +89,7 @@ export default function BackgroundProvider({ children, defaultVariant = 'gradien
     } catch {}
   }, [variant]);
 
-  useEffect(()_ => {
+  useEffect(() => {
     try {
       localStorage.setItem('bg-photo', photoUrl);
     } catch {}
