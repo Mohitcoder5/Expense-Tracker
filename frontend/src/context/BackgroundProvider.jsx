@@ -83,13 +83,13 @@ export default function BackgroundProvider({ children, defaultVariant = 'gradien
     }
   });
 
-  useEffect(() => {
+  useEffect(()_ => {
     try {
       localStorage.setItem('bg-variant', variant);
     } catch {}
   }, [variant]);
 
-  useEffect(() => {
+  useEffect(()_ => {
     try {
       localStorage.setItem('bg-photo', photoUrl);
     } catch {}

@@ -68,7 +68,8 @@ export default function BackgroundPicker() {
         </button>
       </div>
 
-      <div className="grid grid-cols-5 gap-3">
+      {/* --- THIS IS THE FIX --- */}
+      <div className="flex flex-row flex-wrap justify-center gap-3">
         {options.map((opt) => (
           <VariantButton
             key={opt.id}
